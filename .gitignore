@@ -1,0 +1,17 @@
+# Whitelist approach
+*
+
+# ----- Allow dots -----
+!.gitignore
+
+!hypr/
+!hypr/**
+
+!quickshell/
+!quickshll/**
+
+!alacritty/
+!alacritty/**
+
+!fish/
+!fish/**
