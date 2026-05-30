@@ -3,6 +3,7 @@
 
 # ----- Allow dots -----
 !.gitignore
+!README.md
 
 !hypr/
 !hypr/**
@@ -15,3 +16,4 @@
 
 !fish/
 !fish/**
+
