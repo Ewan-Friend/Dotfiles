@@ -11,15 +11,9 @@ PanelWindow {
 
     // TEMP (to load theme singleton)
     property var themeManager: ThemeManager
+    property var catpuccin: Catpuccin
 
-    // Colour Scheme 
-    property color colBg: "#070f2b"
-    property color colFg: "#ffffff"
-    property color colAccent: "#1b1a55"
-    property color colMuted: "#535c91"
-    property color colCyan: "#19b4cf"
-    property color colViolet: "#8468c3"
-    property color colYellow: "#e0af68"
+
     property string fontFamily: "JetBrainsMono NF"
     property int fontSize: 15
 
@@ -80,7 +74,7 @@ PanelWindow {
     anchors.left: true
     anchors.right: true
     implicitHeight: 32
-    color: colBg
+    color: Catppuccin.base
 
     // Row Layout of widgets
     RowLayout {
@@ -95,7 +89,7 @@ PanelWindow {
 			property var ws: Hyprland.workspaces.values.find(w => w.id === index + 1)
 			property bool isActive: Hyprland.focusedWorkspace?.id === (index + 1)
 			text: index + 1
-			color: isActive ? colCyan: (ws ? colViolet : colMuted)
+			color: isActive ? Catppuccin.sapphire: (ws ? Catppuccin.overlay2 : Catppuccin.surface2)
 			font { pixelSize : fontSize; bold: true }
 		        
 			MouseArea {
@@ -110,25 +104,25 @@ PanelWindow {
     // CPU
     Text {
         text: "CPU: " + cpuUsage + "%"
-        color: root.colViolet
+        color: Catppuccin.sky
         font {family: root.fontFamily; pixelSize: root.fontSize; bold: true}
     }
     
-    Rectangle {width: 3; height: 18; color: root.colMuted}
+    Rectangle {width: 3; height: 18; color: Catppuccin.sapphire}
 
     // Memory
     Text {
         text: "Mem: " + memUsage + "%"
-        color: root.colViolet
+        color: Catppuccin.sky
         font {family: root.fontFamily; pixelSize: root.fontSize; bold: true}
     }
 
-    Rectangle {width: 3; height: 18; color: root.colMuted}
+    Rectangle {width: 3; height: 18; color: Catppuccin.sapphire}
 
     // Clock 
     Text {
         id: clock 
-        color: root.colViolet
+        color: Catppuccin.sky
         font {family: root.fontFamily; pixelSize: root.fontSize; bold: true}
         text: Qt.formatDateTime(new Date(), "ddd dd - HH:mm:ss")
         Timer {
