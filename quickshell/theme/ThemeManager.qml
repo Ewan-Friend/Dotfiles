@@ -6,7 +6,7 @@ import Qt.labs.settings
 Singleton {
     id: root
 
-    readonly property string gtkTheme: "Catppuccin-Mocha-Standard-Mavue-Dark"
+    readonly property string gtkTheme: "catppuccin-mocha-mauve-standard+default"
     readonly property string colorScheme: "prefer-dark"
     readonly property string iconTheme: "Papirus-Dark"
 

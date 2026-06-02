@@ -17,7 +17,7 @@ readonly property color rosewater: "#f5e0dc"
     readonly property color sapphire:  "#74c7ec"
     readonly property color blue:      "#89b4fa"
     readonly property color lavender:  "#b4befe"
-    
+
     // Backgrounds & Surfaces
     readonly property color text:      "#cdd6f4"
     readonly property color subtext1:  "#bac2de"
