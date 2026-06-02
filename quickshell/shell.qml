@@ -4,9 +4,13 @@ import Quickshell.Hyprland
 import Quickshell.Io
 import QtQuick
 import QtQuick.Layouts
+import "./theme"
 
 PanelWindow {
     id: root
+
+    // TEMP (to load theme singleton)
+    property var themeManager: ThemeManager
 
     // Colour Scheme 
     property color colBg: "#070f2b"
@@ -14,7 +18,7 @@ PanelWindow {
     property color colAccent: "#1b1a55"
     property color colMuted: "#535c91"
     property color colCyan: "#19b4cf"
-    property color colViolet: "#8467c3"
+    property color colViolet: "#8468c3"
     property color colYellow: "#e0af68"
     property string fontFamily: "JetBrainsMono NF"
     property int fontSize: 15
@@ -126,7 +130,7 @@ PanelWindow {
         id: clock 
         color: root.colViolet
         font {family: root.fontFamily; pixelSize: root.fontSize; bold: true}
-        text: Qt.formatDateTime(new Date(), "ddd, MMM dd - HH:mm:ss t yyyy")
+        text: Qt.formatDateTime(new Date(), "ddd dd - HH:mm:ss")
         Timer {
             interval: 1000
             running: true
@@ -134,6 +138,6 @@ PanelWindow {
             onTriggered: clock.text = Qt.formatDateTime(new Date(), "ddd dd - HH:mm:ss")
         }
     }
+    }
 }
 
-}

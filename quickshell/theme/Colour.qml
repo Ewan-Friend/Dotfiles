@@ -5,7 +5,6 @@ import QtQuick
 // Colour properties ripped from:
 // https://github.com/melatonia/meloworld-dotfiles/blob/main/quickshell/theme/Colors.qml
 Singleton {
-    Singleton {
     readonly property color white:    "#ffffffdd"
     readonly property color black:    "#000000"
 
@@ -210,5 +209,4 @@ Singleton {
     readonly property color bluegrey700: "#455a64"
     readonly property color bluegrey800: "#37474f"
     readonly property color bluegrey900: "#263238"
-}
 }
