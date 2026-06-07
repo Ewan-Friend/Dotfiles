@@ -1,17 +1,25 @@
+//@ pragma IconTheme Papirus
 import Quickshell
-import Quickshell.Wayland
-import Quickshell.Hyprland
-import Quickshell.Io
-import QtQuick
-import QtQuick.Layouts
+import QtQuick 
 import "bar"
-import "./theme"
 
 ShellRoot{
     // TEMP (to load theme singleton)
     property var themeManager: ThemeManager
 
-    id: root 
-    Bar {id: bar}
-}
+    Variants {
+        model: Quickshell.screens
+
+        PanelWindow {
+            required property var modelData
+            screen: modelData
+            anchors { top: true; left: true; right: true }
+            implicitHeight: 55
+            color: "transparent"
+            exclusiveZone: implicitHeight
+            Bar { anchors.fill: parent }
+        }
+    }
+
+  }
 
