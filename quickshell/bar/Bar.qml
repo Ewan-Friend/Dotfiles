@@ -17,7 +17,7 @@ Item {
         anchors.rightMargin: 12
         anchors.verticalCenter: parent.verticalCenter
         height: parent.height - 15
-        color: PanelColors.barBackground
+        color: Catppuccin.crust 
         radius: 8
         width: rightBar.implicitWidth + 12
 

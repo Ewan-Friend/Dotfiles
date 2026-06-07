@@ -8,13 +8,13 @@ Rectangle {
 
     implicitHeight: 28
     implicitWidth: pillLabel.implicitWidth + 16
-    radius: 5
+    radius: 3
     color: pillColor
 
     MouseArea {
         anchors.fill: parent
         hoverEnabled: true
-        onEntered: root.opacity = 0.6
+        onEntered: root.opacity = 0.75
         onExited: root.opacity = 1
     }
 
