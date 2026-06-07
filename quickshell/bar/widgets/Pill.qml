@@ -20,7 +20,6 @@ Rectangle {
 
     Text {
         id: pillLabel
-        color: "#ffffff"
         anchors.centerIn: parent 
         text: root.label 
         font.pixelSize: 16
