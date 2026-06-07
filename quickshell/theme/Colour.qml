@@ -5,7 +5,7 @@ import QtQuick
 // Colour properties ripped from:
 // https://github.com/melatonia/meloworld-dotfiles/blob/main/quickshell/theme/Colors.qml
 Singleton {
-    readonly property color white:    "#ffffffdd"
+    readonly property color white:    "#ffffff"
     readonly property color black:    "#000000"
 
     readonly property color grey50:   "#fafafa"
@@ -18,6 +18,8 @@ Singleton {
     readonly property color grey700:  "#616161"
     readonly property color grey800:  "#424242"
     readonly property color grey900:  "#212121"
+    readonly property color grey910:  "#1a1a1a" // custom -----------
+    readonly property color grey920:  "#131313"
 
     readonly property color red50:    "#ffebee"
     readonly property color red100:   "#ffcdd2"
@@ -156,7 +158,7 @@ Singleton {
 
     readonly property color deeppurple50:   "#ede7f6"
     readonly property color deeppurple100:  "#d1c4e9"
-    readonly property color deepPurple200:  "#B39dDB"
+    readonly property color deeppurple200:  "#B39dDB"
     readonly property color deeppurple300:  "#9575cd"
     readonly property color deeppurple400:  "#7e57c2"
     readonly property color deeppurple500:  "#673ab7"

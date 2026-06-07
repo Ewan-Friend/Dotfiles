@@ -3,7 +3,7 @@ import "../../theme/"
 
 Rectangle {
     id: root
-    property color pillColor: Catppuccin.sapphire
+    property color pillColor: MainColours.date
     property string label: ""
 
     implicitHeight: 28
@@ -20,6 +20,7 @@ Rectangle {
 
     Text {
         id: pillLabel
+        color: "#ffffff"
         anchors.centerIn: parent 
         text: root.label 
         font.pixelSize: 16

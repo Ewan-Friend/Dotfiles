@@ -2,4 +2,4 @@ singleton Colour 1.0 Colour.qml
 singleton Catppuccin 1.0 Catppuccin.qml
 singleton SessionState 1.0 SessionState.qml
 singleton ThemeManager 1.0 ThemeManager.qml
-
+singleton MainColours 1.0 MainColours.qml
