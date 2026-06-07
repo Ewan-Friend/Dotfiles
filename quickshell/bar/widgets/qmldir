@@ -1,5 +1,7 @@
 module qs.bar.widgets
 
 Pill 1.0 Pill.qml
+CpuWidget 1.0 CpuWidget.qml
 DateWidget 1.0 DateWidget.qml
 BatteryWidget 1.0 BatteryWidget.qml
+
