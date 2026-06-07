@@ -1,0 +1,4 @@
+module qs.bar.widgets
+
+Pill 1.0 Pill.qml
+DateWidget 1.0 DateWidget.qml

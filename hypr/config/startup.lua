@@ -11,6 +11,7 @@ local startup = {
 	"alacritty",
 	-- "nm-applet"
 	"brave",
+	"hyprpaper",
 	"quickshell",
 }
 
