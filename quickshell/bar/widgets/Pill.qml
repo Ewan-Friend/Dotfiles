@@ -8,7 +8,7 @@ Rectangle {
     property string label: ""
 
     implicitHeight: 28
-    implicitWidth: pillLabel.implicitWidth + 16
+    implicitWidth: pillLabel.implicitWidth + 16 //TODO: set min width
     radius: 3
     color: pillColor
 

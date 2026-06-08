@@ -1,4 +1,5 @@
 import QtQuick
+import QtQuick.Effects
 import Quickshell
 import "../theme"
 import "."
@@ -7,8 +8,10 @@ import "widgets"
 Item {
     id: root
 
+    // ----- Left Bar ----- 
     Rectangle {    }
 
+    // ----- Center Bar -----
     Rectangle {
         id: centerContainer
         anchors.centerIn: parent
@@ -23,6 +26,7 @@ Item {
         }
     }
 
+    // ----- Right Bar -----
     Rectangle {
         id: rightContainer
         anchors.right: parent.right
@@ -37,5 +41,18 @@ Item {
             id: rightBar
             anchors.centerIn: parent
         }
+    }
+
+    // ----- Right Electric Line ----- 
+    PulseLine {
+        id: connectingLine
+        height: 12 
+
+        anchors.left: centerContainer.right
+        anchors.right: rightContainer.left
+        anchors.verticalCenter: parent.verticalCenter
+
+        anchors.leftMargin: 0
+        anchors.rightMargin: 0
     }
 }

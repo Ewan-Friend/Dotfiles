@@ -18,7 +18,7 @@ Singleton {
     readonly property color grey700:  "#616161"
     readonly property color grey800:  "#424242"
     readonly property color grey900:  "#212121"
-    readonly property color grey910:  "#1a1a1a" // custom -----------
+    readonly property color grey910:  "#1a1a2f" // custom -----------
     readonly property color grey920:  "#131313"
 
     readonly property color red50:    "#ffebee"
@@ -185,6 +185,8 @@ Singleton {
     readonly property color lightbluea200: "#40c4ff"
     readonly property color lightbluea400: "#00b0ff"
     readonly property color lightbluea700: "#0091ea"
+    readonly property color lightblue910:  "#01519a" // ----- custom
+    readonly property color lightblue920:  "#00477c"
 
     readonly property color cyan50:   "#e0f7fa"
     readonly property color cyan100:  "#b2ebf2"
