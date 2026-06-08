@@ -16,7 +16,7 @@ Pill {
         if (!battery.ready) return "󰂑"
         var sym = ""
         if (charging) {
-            if (pct >= 90) sym = "󰂋"
+            if (pct >= 90) sym = "󱈏"
             else if (pct >= 80) sym = "󰂊"
             else if (pct >= 70) sym = "󰢞"
             else if (pct >= 60) sym = "󰂉"
