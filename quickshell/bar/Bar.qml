@@ -8,14 +8,25 @@ import "widgets"
 Item {
     id: root
 
+    property int lineWidth: 9
+
     // ----- Left Bar ----- 
-    Rectangle {    }
+    Rectangle {   
+        id: leftContainer 
+        anchors.left: parent.left
+        anchors.leftMargin: 12
+        anchors.verticalCenter: parent.verticalCenter
+        height: parent.height - 12
+        color: MainColours.pillBorder
+        radius: 10
+        width: 12
+    }
 
     // ----- Center Bar -----
     Rectangle {
         id: centerContainer
         anchors.centerIn: parent
-        height: parent.height - 15 
+        height: parent.height - 12 
         color: MainColours.pillBorder
         radius: 10
         width: centerBar.implicitWidth + 12
@@ -32,7 +43,7 @@ Item {
         anchors.right: parent.right
         anchors.rightMargin: 12
         anchors.verticalCenter: parent.verticalCenter
-        height: parent.height - 15
+        height: parent.height - 12
         color: MainColours.pillBorder
         radius: 8
         width: rightBar.implicitWidth + 12
@@ -45,11 +56,25 @@ Item {
 
     // ----- Right Electric Line ----- 
     PulseLine {
-        id: connectingLine
-        height: 12 
+        id: rightLine
+        height: lineWidth
 
         anchors.left: centerContainer.right
         anchors.right: rightContainer.left
+        anchors.verticalCenter: parent.verticalCenter
+
+        anchors.leftMargin: 0
+        anchors.rightMargin: 0
+    }
+
+    // ----- Left Electric Line -----
+    PulseLine {
+        id: leftLine
+        height: lineWidth 
+        dontInvert: false
+
+        anchors.left: leftContainer.right
+        anchors.right: centerContainer.left
         anchors.verticalCenter: parent.verticalCenter
 
         anchors.leftMargin: 0

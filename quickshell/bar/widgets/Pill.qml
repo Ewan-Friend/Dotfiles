@@ -6,9 +6,10 @@ Rectangle {
     property color pillColor: MainColours.date
     property color labelColor: MainColours.black
     property string label: ""
+    property int minWidth: 75
 
     implicitHeight: 28
-    implicitWidth: pillLabel.implicitWidth + 16 //TODO: set min width
+    implicitWidth: Math.max(minWidth, pillLabel.implicitWidth + 16) //TODO: set min width
     radius: 3
     color: pillColor
 

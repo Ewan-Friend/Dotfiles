@@ -10,6 +10,7 @@ Item {
 
     property color baseColour: MainColours.pulseBase 
     property color accentColour: MainColours.pulseAccent
+    property bool dontInvert: true
 
     Rectangle {
         id: baseLine
@@ -36,14 +37,14 @@ Item {
                 NumberAnimation {
                     target: pulseSpot
                     property: "position"
-                    from: 0.02; to: 0.98
+                    from: dontInvert ? 0.02 : 0.98 ; to: dontInvert ? 0.98 : 0.02
                     duration: 13500 
                     easing.type: Easing.InOutSine
                 }
                 NumberAnimation {
                     target: pulseSpot
                     property: "position"
-                    from: 0.98; to: 0.02
+                    from: dontInvert ? 0.98 : 0.02 ; to: dontInvert ? 0.02 : 0.98
                     duration: 9000
                     easing.type: Easing.InOutSine
                 }
