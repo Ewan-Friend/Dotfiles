@@ -1,11 +1,16 @@
 import QtQuick 
+import Quickshell
 import "../../theme/"
 
 Pill {
     pillColor: MainColours.clock
 
-    property string time: Qt.formatTime(new Date(), "HH:mm")
-    property string hour: Number.parseInt(time.split(":")[0])
+    SystemClock {
+        id: clock 
+        precision: SystemClock.Minutes 
+    }
+
+    property int hour: clock.hours 
 
     labelColor: "#ffffff" 
     label: {
@@ -24,6 +29,6 @@ Pill {
         if (hour == 11 || hour == 23) sym = "󱑕"
 
 
-        sym + " " + Qt.formatTime(new Date(), "HH:mm")
+        sym + " " + Qt.formatTime(clock.date, "HH:mm")
     }
 }

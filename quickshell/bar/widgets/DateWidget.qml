@@ -5,5 +5,10 @@ import "../../theme"
 Pill {
     pillColor: MainColours.date
 
-    label: "󰃭  " + Qt.formatDateTime(new Date(), "ddd d MMM")
+    SystemClock {
+        id: clock 
+        precision: SystemClock.Minutes 
+    }
+
+    label: "󰃭  " + Qt.formatDateTime(clock.date, "ddd d MMM")
 }
