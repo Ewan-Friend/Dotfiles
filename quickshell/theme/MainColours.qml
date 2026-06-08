@@ -11,4 +11,6 @@ Singleton {
     readonly property color date:       Colour.lightblue700
     readonly property color battery:    Colour.lightblue500  
     readonly property color bluetooth:  Colour.lightblue400
+
+    readonly property color clock:      Colour.bluegrey910
 }

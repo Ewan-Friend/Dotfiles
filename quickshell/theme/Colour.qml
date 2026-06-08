@@ -211,4 +211,5 @@ Singleton {
     readonly property color bluegrey700: "#455a64"
     readonly property color bluegrey800: "#37474f"
     readonly property color bluegrey900: "#263238"
+    readonly property color bluegrey910: "#182a3a" //----- custom
 }

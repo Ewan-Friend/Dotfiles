@@ -5,3 +5,4 @@ CpuWidget 1.0 CpuWidget.qml
 DateWidget 1.0 DateWidget.qml
 BatteryWidget 1.0 BatteryWidget.qml
 BluetoothWidget 1.0 BluetoothWidget.qml
+ClockWidget 1.0 ClockWidget.qml

@@ -1,5 +1,5 @@
 import QtQuick
-import qs.bar.widgets
+import "widgets"
 
 Row {
     spacing: 8

@@ -1,6 +1,5 @@
 import Quickshell.Services.UPower
 import QtQuick 
-
 import "../../theme"
 
 Pill {

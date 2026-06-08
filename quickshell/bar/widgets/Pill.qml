@@ -4,6 +4,7 @@ import "../../theme/"
 Rectangle {
     id: root
     property color pillColor: MainColours.date
+    property color labelColor: MainColours.black
     property string label: ""
 
     implicitHeight: 28
@@ -25,6 +26,7 @@ Rectangle {
         font.pixelSize: 16
         font.bold: true 
         font.family: "JetBrainsMono NF"
+        color: labelColor
     }
 
     Behavior on opacity { NumberAnimation {duration: 150}}

@@ -1,6 +1,9 @@
 import QtQuick
 import Quickshell
+import "../../theme"
 
 Pill {
-    label: Qt.formatDateTime(new Date(), "ddd d MMM")
+    pillColor: MainColours.date
+
+    label: "󰃭  " + Qt.formatDateTime(new Date(), "ddd d MMM")
 }

@@ -1,7 +1,11 @@
-import Quickshell.Servies.UPower
+import QtQuick 
 import "../../theme/"
 
 Pill {
-    pillColor: MainColours.battery
-    label: "battery"
+    pillColor: MainColours.clock
+
+    //TODO: different clock symbol depending on the hour 
+    
+    labelColor: "#ffffff" 
+    label: {"󱑎 "+ Qt.formatTime(new Date(), "HH:mm")}
 }
