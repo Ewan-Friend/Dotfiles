@@ -18,8 +18,13 @@ Item {
         anchors.verticalCenter: parent.verticalCenter
         height: parent.height - 12
         color: MainColours.pillBorder
-        radius: 10
-        width: 12
+        radius: 8
+        width: leftBar.implicitWidth + 12
+
+        LeftBar {
+            id: leftBar
+            anchors.centerIn: parent
+        }
     }
 
     // ----- Center Bar -----
@@ -28,7 +33,7 @@ Item {
         anchors.centerIn: parent
         height: parent.height - 12 
         color: MainColours.pillBorder
-        radius: 10
+        radius: 8
         width: centerBar.implicitWidth + 12
 
         CenterBar {

@@ -29,6 +29,8 @@ Item {
                 GradientStop { position: 1.0; color: root.baseColour }
             }
 
+            // TODO: adapt cyclic gradient by changing to baseColour gradually (illusion of movement)
+
             SequentialAnimation {
                 id: currentPulse
                 running: true 

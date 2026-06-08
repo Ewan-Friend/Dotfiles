@@ -9,7 +9,7 @@ Rectangle {
     property int minWidth: 75
 
     implicitHeight: 28
-    implicitWidth: Math.max(minWidth, pillLabel.implicitWidth + 16) //TODO: set min width
+    implicitWidth: Math.max(minWidth, pillLabel.implicitWidth + 16) 
     radius: 3
     color: pillColor
 
