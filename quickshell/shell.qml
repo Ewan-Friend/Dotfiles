@@ -2,6 +2,7 @@
 import Quickshell
 import QtQuick 
 import "bar"
+import "osd"
 
 ShellRoot{
     // TEMP (to load theme singleton)
@@ -16,8 +17,17 @@ ShellRoot{
             anchors { top: true; left: true; right: true }
             implicitHeight: 55
             color: "transparent"
-            exclusiveZone: implicitHeight - 5
+            exclusiveZone: implicitHeight - 4
             Bar { anchors.fill: parent }
+        }
+    }
+
+    Variants {
+        model: Quickshell.screens 
+
+        SessionOSD {
+            required property var modelData
+            screen: modelData
         }
     }
 
