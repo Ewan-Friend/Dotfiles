@@ -8,4 +8,5 @@ BatteryWidget 1.0 BatteryWidget.qml
 BluetoothWidget 1.0 BluetoothWidget.qml
 ClockWidget 1.0 ClockWidget.qml
 SessionWidget 1.0 SessionWidget.qml
+Runner 1.0 Runner.qml
 
