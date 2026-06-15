@@ -17,3 +17,5 @@
 !fish/
 !fish/**
 
+!nvim/
+!nvim/**
