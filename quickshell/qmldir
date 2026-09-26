@@ -1,4 +1,0 @@
-module quickshell
-
-singleton Colour 1.0 theme/Colour.qml
-singleton Catppuccin 1.0 theme/Catppuccin.qml
